@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <img src="logo.png" width="100%"> </a>
+            </div>
+
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Sobre</a> </li>
+                <li> <a href="#">Productos</a> </li>
+                <li> <a href="#">Preços</a> </li>
+                <li> <a href="#">Contacto</a> </li>
+                <li class="lg"> <a href="#">Login</a> </li>
+            </ul>
+
+            <div class="menu-icon">
+                <img src="menu.png">
+            </div>
+
+        </nav>
+
+        <main>
+            <div class="main__text">
+                <h1> <b>Aumentar!</b> <strong>suas redes sociais Marketing Digital </strong> </h1>
+          
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ut suscipit nulla sint aspernatur autem accusamus itaque 
+                    pariatur. Sed accusamus corrupti magnam id. Provident aliquid 
+                    ut temporibus praesentium fuga saepe? Earum?
+                </p>
+                <button>Junte-se a nós</button>
+            </div>
+            <div class="main__img">
+                <img src="nave.png">
+            </div>
+        </main>
+    </div>
+
+    <script>
+        var menu = document.querySelector('nav ul');
+        var menuIcon = document.querySelector('nav .menu-icon');
+        var menuIconImg = document.querySelector('nav .menu-icon img');
+
+        menuIcon.addEventListener('click',()=>{
+            menu.classList.toggle('activo');
+            if (menuIconImg.getAttribute("src") == 'menu.png') {
+                menuIconImg.setAttribute("src","close.png");
+            }else{
+                menuIconImg.setAttribute("src","menu.png"); 
+            }
+        })
+
+
+
+
+    </script>
+</body>
+</html>
